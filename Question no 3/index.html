@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Job Application Form</h1>
+      <form action="" method="" name="form1" id="form1">
+        <h3>Personal Information:-</h3>
+        <label for="name">First Name:</label>
+        <input type="text" name="fname" id="fname" required />
+        <label for="name">Last Name:</label>
+        <input type="text" name="lname" id="lname" required /> <br /><br />
+        <label for="name">Phone #</label>
+        <input type="number" name="phone" id="phone" required />
+        <label for="name">Email:</label>
+        <input type="email" name="email" id="email" required /> <br /><br />
+        <label for="">Street:</label>
+        <input type="text" name="street" id="street" required />
+        <label for="">City</label>
+        <input type="text" name="city" id="city" required /> <br /><br />
+        <label for="">State</label>
+        <input type="text" name="state" id="state" required />
+        <label for="">Zip Code:</label>
+        <input type="number" name="zip" id="zip" required />
+        <h3>Resume and Cover Letter:-</h3>
+
+        <input type="file" name="file1" id="file1" required />
+
+        <label for="text">Cover Letter:</label>
+        <textarea id="cletter" name="cletter" rows="4" cols="50" required>
+        </textarea>
+        <h3>Education:-</h3>
+        <label for="">Highest Level of Education Attained:</label>
+        <input type="text" name="heducation" id="heducation" required />
+        <label for="">Name of School/University:</label>
+        <input type="text" name="sname" id="sname" required />
+        <label for="">Major/Area of Study:</label>
+        <input type="text" name="areastudy" id="areastudy" required />
+        <label for="">Graduation Year:</label>
+        <input type="date" name="gyear" id="gyear" required />
+        <label for="">Employment History:</label>
+        <input type="text" name="ehistory" id="ehistory" required />
+
+        <h3>Previous Job Titles:-</h3>
+        <label for="">Company Names:</label>
+        <input type="text" name="cname" id="cname" required />
+        <label for="">Employment Dates:</label>
+        <input type="date" name="edate" id="edate" required />
+        <label for="">Job Responsibilities:</label>
+        <input type="text" name="jobres" id="jobres" required />
+
+        <h3>Skills:-</h3>
+        <label for="">Relevant Skills:</label>
+        <input type="text" name="revskills" id="revskills" required />
+        <label for="">Certifications:</label>
+        <input type="text" name="certification" id="certification" required />
+
+        <h3>Availability:-</h3>
+        <label for="">Start Date:</label>
+        <input type="date" name="sdate" id="sdate" required />
+        <label for="">Preferred Work Schedule:-</label>
+        <input type="text" name="workschedule" id="workschedule" required />
+        <label for="">Willingness to Relocate:</label>
+        <input type="text" name="relocate" id="relocate" required />
+
+        <h3>References:-</h3>
+        <label for="">Reference Name:</label>
+        <input type="text" name="rname" id="rname" required />
+        <label for="">Reference Contact Information:</label>
+        <input type="text" name="refcontact" id="refcontact" required />
+        <label for="">Relationship to Applicant:</label>
+        <input type="text" name="relationship" id="relationship" required />
+
+        <h3>Additional Questions:-</h3>
+        <label for="">Why do you want to work for this company?</label>
+        <input type="text" name="workforcompany" id="workforcompany" required />
+
+        <h3>Consent and Agreement:-</h3>
+        <label for="">Terms and conditions:</label>
+        <input type="checkbox" name="term" id="term" required />
+        <label for="">Privacy Policy acknowledgment:</label>
+        <input type="checkbox" name="privacy" id="privacy" required />
+
+        <input
+          type="submit"
+          name="submit"
+          id="submit"
+          value="Submit"
+          onclick="ValidateEmail(document.form1.email)"
+        />
+
+        <input
+          type="button"
+          name="button"
+          id="button"
+          value="View Data As Application"
+          onclick="viewData()"
+        />
+      </form>
+
+      <div class="table-wrapper" id="viewrecord">
+        <table class="fl-table" id="tables">
+          <thead>
+            <tr>
+              <th>SR #</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

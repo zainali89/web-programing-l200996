@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 920px;
+  height: 1050px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  padding: 20px 40px;
+  position: relative;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #c62fe9;
+  margin-bottom: 10px;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-details {
+  width: 530px;
+}
+
+.image {
+  width: 370px;
+}
+
+.main-details h1 {
+  font-size: 52px;
+  letter-spacing: 1px;
+}
+
+.main-details h2 {
+  font-size: 48px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  margin: 0;
+  color: #535353;
+}
+
+.main-details ion-icon {
+  color: #c62fe9;
+  font-size: 18px;
+  margin-right: 20px;
+  margin-bottom: -2px;
+}
+
+.main-details p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.profile-img {
+  height: 300px;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+}
+
+.left-img {
+  position: absolute;
+  height: 250px;
+  top: 0;
+  left: 0;
+}
+
+.bottom-right-pic {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 160px;
+}
+
+.profile p {
+  font-size: 14px;
+  text-align: justify;
+  color: #535353;
+}
+
+hr {
+  height: 2px;
+  border: none;
+  background-color: #d3d3d3;
+  margin-top: 28px;
+  margin-bottom: 0px;
+}
+
+.description {
+  display: flex;
+}
+
+.education-side {
+  width: 530px;
+  border-right: 2px solid #d3d3d3;
+  height: 626px;
+}
+
+.education-side p,
+.skills-side p {
+  line-height: 22px;
+  color: #535353;
+  letter-spacing: 0.6px;
+}
+
+ul {
+  list-style: none;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+.description ul ion-icon {
+  margin-right: 5px;
+  color: purple;
+}
+
+.skills-side {
+  width: 370px;
+  margin-left: 50px;
+}
